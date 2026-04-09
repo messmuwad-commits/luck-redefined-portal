@@ -103,6 +103,9 @@ const Index = () => {
           The future of chance
         </motion.p>
       </div>
+
+      {/* Mechanics Section */}
+      <MechanicsSection />
     </div>
   );
 };
