@@ -1,7 +1,8 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Play, HelpCircle } from "lucide-react";
+import MechanicsSection from "@/components/MechanicsSection";
 
 const Index = () => {
   const scrollOpacity = useMotionValue(0.15);
