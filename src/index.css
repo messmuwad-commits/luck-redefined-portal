@@ -64,6 +64,12 @@
 }
 
 @layer utilities {
+  .text-glow-cyan {
+    color: hsl(var(--glow-cyan));
+    filter: drop-shadow(0 0 6px hsl(var(--glow-cyan) / 0.4));
+  }
+
+
   .glass-card {
     background: hsl(var(--glass-bg) / 0.45);
     backdrop-filter: blur(28px);
