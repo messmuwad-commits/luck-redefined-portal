@@ -92,8 +92,25 @@
             drop-shadow(0 0 60px hsl(180 100% 50% / 0.08));
     text-shadow: 0 0 40px hsl(0 0% 100% / 0.3), 0 0 80px hsl(180 100% 50% / 0.1);
   }
+  .btn-onyx-silver {
+    background: hsl(0 0% 8%);
+    color: hsl(0 0% 78%);
+    border: 1px solid hsl(0 0% 40% / 0.4);
+    box-shadow: 0 0 15px hsl(0 0% 100% / 0.06),
+                inset 0 1px 0 hsl(0 0% 100% / 0.06);
+    animation: silver-pulse 3s ease-in-out infinite;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
 
-  .btn-gradient-cyan {
+  .btn-onyx-silver:hover {
+    border-color: hsl(0 0% 60% / 0.6);
+    color: hsl(0 0% 95%);
+    box-shadow: 0 0 25px hsl(0 0% 100% / 0.12),
+                0 0 50px hsl(0 0% 100% / 0.04),
+                inset 0 1px 0 hsl(0 0% 100% / 0.1);
+  }
+
+
     background: linear-gradient(135deg, hsl(var(--glow-cyan)), hsl(220 80% 40%));
     color: hsl(var(--primary-foreground));
     box-shadow: 0 0 20px hsl(var(--glow-cyan) / 0.3),

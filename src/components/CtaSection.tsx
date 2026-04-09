@@ -93,7 +93,7 @@ const CtaSection = () => {
         <motion.button
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.97 }}
-          className="px-12 py-4 text-lg font-bold rounded-xl btn-gradient-cyan transition-all duration-300 cursor-pointer"
+          className="px-12 py-4 text-lg font-bold rounded-xl btn-onyx-silver transition-all duration-300 cursor-pointer"
         >
           START PLAYING
         </motion.button>
