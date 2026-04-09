@@ -84,13 +84,15 @@
     background-clip: text;
     filter: drop-shadow(0 0 30px hsl(0 0% 100% / 0.25))
             drop-shadow(0 0 60px hsl(180 100% 50% / 0.08));
+    text-shadow: 0 0 40px hsl(0 0% 100% / 0.3), 0 0 80px hsl(180 100% 50% / 0.1);
   }
 
   .btn-cyan-pulse {
-    box-shadow: 0 0 16px hsl(var(--glow-cyan) / 0.35),
-                0 0 40px hsl(var(--glow-cyan) / 0.15),
-                inset 0 0 12px hsl(var(--glow-cyan) / 0.05);
-    animation: cyan-pulse 2.5s ease-in-out infinite;
+    box-shadow: 0 0 20px hsl(var(--glow-cyan) / 0.45),
+                0 0 50px hsl(var(--glow-cyan) / 0.2),
+                0 0 80px hsl(var(--glow-cyan) / 0.1),
+                inset 0 0 15px hsl(var(--glow-cyan) / 0.08);
+    animation: cyan-pulse 2s ease-in-out infinite;
   }
 
   .btn-glow-border {
@@ -109,12 +111,14 @@
 
 @keyframes cyan-pulse {
   0%, 100% {
-    box-shadow: 0 0 16px hsl(var(--glow-cyan) / 0.3),
-                0 0 40px hsl(var(--glow-cyan) / 0.12);
+    box-shadow: 0 0 20px hsl(var(--glow-cyan) / 0.4),
+                0 0 50px hsl(var(--glow-cyan) / 0.15),
+                0 0 80px hsl(var(--glow-cyan) / 0.05);
   }
   50% {
-    box-shadow: 0 0 24px hsl(var(--glow-cyan) / 0.5),
-                0 0 60px hsl(var(--glow-cyan) / 0.25),
-                0 0 90px hsl(var(--glow-cyan) / 0.1);
+    box-shadow: 0 0 30px hsl(var(--glow-cyan) / 0.6),
+                0 0 70px hsl(var(--glow-cyan) / 0.3),
+                0 0 110px hsl(var(--glow-cyan) / 0.15),
+                0 0 150px hsl(var(--glow-cyan) / 0.05);
   }
 }

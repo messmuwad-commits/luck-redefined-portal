@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Play, HelpCircle } from "lucide-react";
+import { HelpCircle } from "lucide-react";
 import MechanicsSection from "@/components/MechanicsSection";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
@@ -60,22 +60,22 @@ const Index = () => {
             REDEFINE YOUR LUCK
           </motion.h1>
 
-          {/* 16:9 Video Placeholder */}
+          {/* 16:9 Video */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 0.7 }}
-            className="aspect-video w-full rounded-xl bg-accent/40 border border-border flex items-center justify-center mb-8 overflow-hidden relative group cursor-pointer"
+            className="aspect-video w-full rounded-xl border border-border mb-8 overflow-hidden relative"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-muted/20 to-transparent" />
-            <div className="flex flex-col items-center gap-3 z-10">
-              <div className="w-16 h-16 rounded-full bg-[hsl(180_100%_50%/0.06)] border border-[hsl(180_100%_50%/0.15)] flex items-center justify-center group-hover:bg-[hsl(180_100%_50%/0.12)] transition-all duration-500">
-                <Play className="w-7 h-7 text-muted-foreground ml-1" />
-              </div>
-              <span className="text-muted-foreground text-sm font-medium tracking-wide">
-                3D Dice Preview
-              </span>
-            </div>
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
+              src="/hero-video.mp4"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-background/40 pointer-events-none" />
           </motion.div>
 
           {/* Buttons */}
