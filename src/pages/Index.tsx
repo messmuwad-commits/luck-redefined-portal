@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { HelpCircle } from "lucide-react";
+import Navbar from "@/components/Navbar";
 import MechanicsSection from "@/components/MechanicsSection";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
@@ -28,6 +29,7 @@ const Index = () => {
 
   return (
     <div className="min-h-[200vh] bg-background relative overflow-hidden">
+      <Navbar />
       {/* Fixed radial gradient light overlay */}
       <motion.div
         className="fixed inset-0 pointer-events-none z-0"
@@ -79,10 +81,10 @@ const Index = () => {
             transition={{ delay: 0.7, duration: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button variant="hero" size="lg" className="text-base px-8 btn-cyan-pulse">
+            <Button variant="hero" size="lg" className="text-base px-8 btn-gradient-cyan">
               Start Playing
             </Button>
-            <Button variant="heroGhost" size="lg" className="text-base px-8 btn-glow-border">
+            <Button variant="heroGhost" size="lg" className="text-base px-8 btn-gradient-border">
               <HelpCircle className="w-4 h-4 mr-1" />
               How it Works
             </Button>
