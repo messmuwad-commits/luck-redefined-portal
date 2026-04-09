@@ -40,43 +40,37 @@ const Index = () => {
 
       {/* Hero Section */}
       <div className="min-h-screen flex flex-col items-center justify-center px-4 py-16 relative z-10">
+        {/* Full-bleed background video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/hero-video.mp4"
+        />
+        {/* Dark gradient overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background/80 pointer-events-none" />
+
         {/* Ambient glow */}
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[hsl(180_100%_50%/0.04)] blur-[120px] pointer-events-none" />
 
-        {/* Glassmorphism Card */}
+        {/* Content on top of video */}
         <motion.div
           initial={{ opacity: 0, y: 40, scale: 0.96 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          className="glass-card rounded-2xl p-8 md:p-12 w-full max-w-3xl relative"
+          className="relative z-10 flex flex-col items-center w-full max-w-3xl"
         >
           {/* Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-center text-glow-silver mb-8"
+            className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-center text-glow-silver mb-12"
           >
             REDEFINE YOUR LUCK
           </motion.h1>
-
-          {/* 16:9 Video */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.5, duration: 0.7 }}
-            className="aspect-video w-full rounded-xl border border-border mb-8 overflow-hidden relative"
-          >
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="absolute inset-0 w-full h-full object-cover"
-              src="/hero-video.mp4"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-background/40 pointer-events-none" />
-          </motion.div>
 
           {/* Buttons */}
           <motion.div
@@ -100,7 +94,7 @@ const Index = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="mt-12 text-muted-foreground text-sm tracking-widest uppercase"
+          className="relative z-10 mt-12 text-muted-foreground text-sm tracking-widest uppercase"
         >
           The future of chance
         </motion.p>
