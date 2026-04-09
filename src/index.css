@@ -87,6 +87,37 @@
     text-shadow: 0 0 40px hsl(0 0% 100% / 0.3), 0 0 80px hsl(180 100% 50% / 0.1);
   }
 
+  .btn-gradient-cyan {
+    background: linear-gradient(135deg, hsl(var(--glow-cyan)), hsl(220 80% 40%));
+    color: hsl(var(--primary-foreground));
+    box-shadow: 0 0 20px hsl(var(--glow-cyan) / 0.3),
+                0 0 50px hsl(var(--glow-cyan) / 0.1);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .btn-gradient-cyan:hover {
+    box-shadow: 0 0 30px hsl(var(--glow-cyan) / 0.5),
+                0 0 60px hsl(var(--glow-cyan) / 0.2);
+    filter: brightness(1.15);
+  }
+
+  .btn-gradient-border {
+    border: 1px solid transparent;
+    background-image: linear-gradient(hsl(var(--background)), hsl(var(--background))),
+                      linear-gradient(135deg, hsl(var(--glow-cyan) / 0.6), hsl(220 80% 40% / 0.6));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .btn-gradient-border:hover {
+    background-image: linear-gradient(hsl(var(--background)), hsl(var(--background))),
+                      linear-gradient(135deg, hsl(var(--glow-cyan)), hsl(220 80% 50%));
+    box-shadow: 0 0 20px hsl(var(--glow-cyan) / 0.2),
+                0 0 40px hsl(var(--glow-cyan) / 0.08);
+    color: hsl(var(--glow-cyan));
+  }
+
   .btn-cyan-pulse {
     box-shadow: 0 0 20px hsl(var(--glow-cyan) / 0.45),
                 0 0 50px hsl(var(--glow-cyan) / 0.2),
