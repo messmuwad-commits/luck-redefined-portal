@@ -53,7 +53,7 @@ export default {
         },
         glow: {
           primary: "hsl(var(--glow-primary))",
-          accent: "hsl(var(--glow-accent))",
+          cyan: "hsl(var(--glow-cyan))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
