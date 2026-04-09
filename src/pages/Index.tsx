@@ -51,8 +51,9 @@ const Index = () => {
           className="absolute inset-0 w-full h-full object-cover"
           src="/hero-video.mp4"
         />
-        {/* Dark gradient overlay for readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background/80 pointer-events-none" />
+        {/* Dark vignette + gradient overlay */}
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, transparent 30%, hsl(0 0% 7% / 0.7) 100%)" }} />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background/80 pointer-events-none" />
 
         {/* Ambient glow */}
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[hsl(180_100%_50%/0.04)] blur-[120px] pointer-events-none" />
@@ -81,7 +82,7 @@ const Index = () => {
             transition={{ delay: 0.7, duration: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button variant="hero" size="lg" className="text-base px-8 btn-gradient-cyan">
+            <Button variant="hero" size="lg" className="text-base px-8 btn-onyx-silver">
               Start Playing
             </Button>
             <Button variant="heroGhost" size="lg" className="text-base px-8 btn-gradient-border">
@@ -96,7 +97,8 @@ const Index = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="relative z-10 mt-12 text-muted-foreground text-sm tracking-widest uppercase"
+          className="relative z-10 mt-12 text-muted-foreground/40 text-sm tracking-widest uppercase"
+          style={{ fontFamily: "'Rajdhani', sans-serif" }}
         >
           The future of chance
         </motion.p>
