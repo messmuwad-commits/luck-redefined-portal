@@ -31,13 +31,12 @@ const CtaSection = () => {
     resize();
     window.addEventListener("resize", resize);
 
-    // Init particles
     particles.current = Array.from({ length: PARTICLE_COUNT }, () => ({
       x: Math.random() * canvas.offsetWidth,
       y: Math.random() * canvas.offsetHeight,
       size: Math.random() * 3 + 1.5,
       speed: Math.random() * 0.3 + 0.1,
-      opacity: Math.random() * 0.35 + 0.08,
+      opacity: Math.random() * 0.25 + 0.05,
       drift: (Math.random() - 0.5) * 0.4,
     }));
 
@@ -55,7 +54,7 @@ const CtaSection = () => {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255,255,255,${p.opacity})`;
+        ctx.fillStyle = `hsla(270, 40%, 60%, ${p.opacity})`;
         ctx.fill();
       }
       animFrame.current = requestAnimationFrame(draw);
@@ -70,14 +69,12 @@ const CtaSection = () => {
 
   return (
     <section className="relative z-10 py-32 px-4 flex items-center justify-center overflow-hidden">
-      {/* Particle canvas */}
       <canvas
         ref={canvasRef}
         className="absolute inset-0 w-full h-full pointer-events-none"
       />
 
-      {/* Ambient glow behind CTA */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[hsl(180_100%_50%/0.05)] blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[hsl(270_40%_50%/0.06)] blur-[100px] pointer-events-none" />
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
