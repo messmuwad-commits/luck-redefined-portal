@@ -30,7 +30,7 @@ const MechanicsSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.7 }}
-        className="text-3xl md:text-4xl font-black tracking-tight text-center text-glow-silver neon-mixed mb-16"
+        className="text-3xl md:text-4xl font-black tracking-tight text-center text-glow-silver neon-crimson mb-16"
       >
         HOW IT WORKS
       </motion.h2>
@@ -53,12 +53,12 @@ const MechanicsSection = () => {
                 ease: "easeInOut",
                 delay: card.floatDelay,
               }}
-              className="relative z-10 w-14 h-14 rounded-xl bg-[hsl(270_40%_50%/0.1)] border border-[hsl(270_40%_50%/0.25)] flex items-center justify-center mb-6 group-hover:bg-[hsl(270_40%_50%/0.18)] transition-colors duration-500"
+              className="relative z-10 w-14 h-14 rounded-xl bg-[hsl(0_80%_45%/0.1)] border border-[hsl(0_80%_45%/0.25)] flex items-center justify-center mb-6 group-hover:bg-[hsl(0_80%_45%/0.18)] transition-colors duration-500"
             >
-              <card.icon className="w-7 h-7 text-[hsl(270_40%_55%)] drop-shadow-[0_0_8px_hsl(270_40%_50%/0.5)]" />
+              <card.icon className="w-7 h-7 text-[hsl(0_80%_50%)] drop-shadow-[0_0_8px_hsl(0_80%_45%/0.5)]" />
             </motion.div>
 
-            <h3 className="relative z-10 text-lg font-bold text-foreground mb-3 tracking-wide neon-blue">
+            <h3 className="relative z-10 text-lg font-bold text-foreground mb-3 tracking-wide neon-crimson">
               {card.title}
             </h3>
             <p className="relative z-10 text-muted-foreground text-sm leading-relaxed neon-gold">

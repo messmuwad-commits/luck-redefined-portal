@@ -54,7 +54,7 @@ const CtaSection = () => {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(270, 40%, 60%, ${p.opacity})`;
+        ctx.fillStyle = `hsla(0, 80%, 50%, ${p.opacity})`;
         ctx.fill();
       }
       animFrame.current = requestAnimationFrame(draw);
@@ -74,7 +74,7 @@ const CtaSection = () => {
         className="absolute inset-0 w-full h-full pointer-events-none"
       />
 
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[hsl(270_40%_50%/0.06)] blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[hsl(0_80%_45%/0.06)] blur-[100px] pointer-events-none" />
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}

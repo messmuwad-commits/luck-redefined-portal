@@ -31,7 +31,7 @@ const Navbar = () => {
           <li key={link.href}>
             <a
               href={link.href}
-              className="font-rajdhani text-sm font-semibold tracking-wider text-muted-foreground/50 neon-blue hover:text-[hsl(38_80%_65%)] hover:neon-gold transition-all duration-400"
+              className="font-rajdhani text-sm font-semibold tracking-wider text-muted-foreground/50 neon-crimson hover:text-[hsl(38_75%_55%)] hover:neon-gold transition-all duration-400"
               style={{ fontFamily: "'Rajdhani', sans-serif" }}
             >
               {link.label}
