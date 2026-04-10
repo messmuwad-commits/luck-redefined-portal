@@ -20,9 +20,9 @@ const Navbar = () => {
         <img
           src={d20Logo}
           alt="CORE logo"
-          className="w-8 h-8 drop-shadow-[0_0_10px_hsl(0_0%_100%/0.4)]"
+          className="w-8 h-8 drop-shadow-[0_0_10px_hsl(270_40%_55%/0.5)]"
         />
-        <span className="text-lg font-black tracking-[0.3em] text-glow-silver uppercase">
+        <span className="text-lg font-black tracking-[0.3em] text-brand-core uppercase">
           CORE
         </span>
       </a>
@@ -31,7 +31,7 @@ const Navbar = () => {
           <li key={link.href}>
             <a
               href={link.href}
-              className="font-rajdhani text-sm font-semibold tracking-wider text-muted-foreground/50 hover:text-glow-silver transition-all duration-400"
+              className="font-rajdhani text-sm font-semibold tracking-wider text-muted-foreground/50 hover:text-brand-core transition-all duration-400"
               style={{ fontFamily: "'Rajdhani', sans-serif" }}
             >
               {link.label}
