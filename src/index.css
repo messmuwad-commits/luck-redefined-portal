@@ -77,6 +77,18 @@
     filter: drop-shadow(0 0 6px hsl(var(--glow-cyan) / 0.4));
   }
 
+  .neon-blue {
+    text-shadow: 0 0 7px hsl(210 100% 60% / 0.5), 0 0 20px hsl(210 100% 55% / 0.25), 0 0 40px hsl(210 100% 50% / 0.1);
+  }
+
+  .neon-gold {
+    text-shadow: 0 0 7px hsl(38 70% 55% / 0.5), 0 0 20px hsl(38 70% 50% / 0.25), 0 0 40px hsl(38 70% 45% / 0.1);
+  }
+
+  .neon-mixed {
+    text-shadow: 0 0 8px hsl(210 100% 60% / 0.4), 0 0 18px hsl(38 70% 55% / 0.3), 0 0 40px hsl(210 100% 50% / 0.1);
+  }
+
   .glass-card {
     background: hsl(var(--glass-bg) / 0.45);
     backdrop-filter: blur(28px);
@@ -95,8 +107,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 0 30px hsl(220 60% 30% / 0.3))
-            drop-shadow(0 0 60px hsl(270 40% 50% / 0.1));
+    filter: drop-shadow(0 0 30px hsl(210 100% 55% / 0.35))
+            drop-shadow(0 0 60px hsl(38 70% 55% / 0.15));
   }
 
   .text-brand-core {
@@ -115,19 +127,21 @@
 
   .btn-onyx-silver {
     background: hsl(240 15% 8%);
-    color: hsl(140 18% 50%);
-    border: 1px solid hsl(270 40% 40% / 0.4);
-    box-shadow: 0 0 15px hsl(270 40% 50% / 0.1),
-                inset 0 1px 0 hsl(270 40% 60% / 0.06);
+    color: hsl(210 60% 70%);
+    border: 1px solid hsl(210 80% 50% / 0.3);
+    box-shadow: 0 0 15px hsl(210 100% 55% / 0.1),
+                inset 0 1px 0 hsl(210 80% 60% / 0.06);
+    text-shadow: 0 0 8px hsl(210 100% 60% / 0.4), 0 0 20px hsl(210 100% 55% / 0.15);
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .btn-onyx-silver:hover {
-    border-color: hsl(270 40% 55% / 0.6);
-    color: hsl(220 60% 30%);
-    box-shadow: 0 0 25px hsl(270 40% 50% / 0.2),
-                0 0 50px hsl(270 40% 50% / 0.08),
-                inset 0 1px 0 hsl(270 40% 60% / 0.1);
+    border-color: hsl(38 70% 55% / 0.6);
+    color: hsl(38 80% 65%);
+    text-shadow: 0 0 10px hsl(38 70% 55% / 0.6), 0 0 25px hsl(38 70% 50% / 0.3), 0 0 50px hsl(38 70% 45% / 0.15);
+    box-shadow: 0 0 25px hsl(38 70% 55% / 0.2),
+                0 0 50px hsl(38 70% 50% / 0.08),
+                inset 0 1px 0 hsl(38 70% 60% / 0.1);
   }
 
   .btn-gradient-border {

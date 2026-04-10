@@ -67,7 +67,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7 }}
-            className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight text-center text-glow-silver"
+            className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight text-center text-glow-silver neon-mixed"
           >
             REDEFINE YOUR LUCK
           </motion.h1>
@@ -78,7 +78,7 @@ const Index = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="relative z-10 mt-12 text-[hsl(140_15%_42%)] text-sm tracking-widest uppercase"
+          className="relative z-10 mt-12 text-[hsl(140_15%_42%)] text-sm tracking-widest uppercase neon-blue"
           style={{ fontFamily: "'Rajdhani', sans-serif" }}
         >
           The future of chance
