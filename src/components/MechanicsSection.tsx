@@ -30,7 +30,7 @@ const MechanicsSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.7 }}
-        className="text-3xl md:text-4xl font-black tracking-tight text-center text-glow-silver mb-16"
+        className="text-3xl md:text-4xl font-black tracking-tight text-center text-glow-silver neon-mixed mb-16"
       >
         HOW IT WORKS
       </motion.h2>
@@ -58,10 +58,10 @@ const MechanicsSection = () => {
               <card.icon className="w-7 h-7 text-[hsl(270_40%_55%)] drop-shadow-[0_0_8px_hsl(270_40%_50%/0.5)]" />
             </motion.div>
 
-            <h3 className="relative z-10 text-lg font-bold text-foreground mb-3 tracking-wide">
+            <h3 className="relative z-10 text-lg font-bold text-foreground mb-3 tracking-wide neon-blue">
               {card.title}
             </h3>
-            <p className="relative z-10 text-muted-foreground text-sm leading-relaxed">
+            <p className="relative z-10 text-muted-foreground text-sm leading-relaxed neon-gold">
               {card.description}
             </p>
           </motion.div>

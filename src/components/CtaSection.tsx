@@ -83,7 +83,7 @@ const CtaSection = () => {
         transition={{ duration: 0.8 }}
         className="relative z-10 flex flex-col items-center text-center"
       >
-        <h2 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tight text-glow-silver mb-10">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tight text-glow-silver neon-mixed mb-10">
           READY TO DEFY THE ODDS?
         </h2>
 
