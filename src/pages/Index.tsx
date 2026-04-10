@@ -34,7 +34,7 @@ const Index = () => {
         style={{
           opacity: smoothOpacity,
           background:
-            "radial-gradient(ellipse 60% 50% at 50% 30%, hsl(270 40% 50% / 0.06), transparent 70%), radial-gradient(ellipse 50% 40% at 50% 60%, hsl(38 60% 50% / 0.03), transparent 60%)",
+            "radial-gradient(ellipse 60% 50% at 50% 30%, hsl(0 80% 45% / 0.06), transparent 70%), radial-gradient(ellipse 50% 40% at 50% 60%, hsl(38 65% 50% / 0.03), transparent 60%)",
         }}
       />
 
@@ -50,11 +50,11 @@ const Index = () => {
           src="/hero-video.mp4"
         />
         {/* Dark vignette + gradient overlay */}
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, transparent 30%, hsl(240 15% 6% / 0.8) 100%)" }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, transparent 30%, hsl(0 10% 5% / 0.8) 100%)" }} />
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-transparent to-background/90 pointer-events-none" />
 
         {/* Ambient glow */}
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[hsl(270_40%_50%/0.04)] blur-[120px] pointer-events-none" />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[hsl(0_80%_45%/0.04)] blur-[120px] pointer-events-none" />
 
         {/* Content on top of video — headline only */}
         <motion.div
@@ -78,7 +78,7 @@ const Index = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="relative z-10 mt-12 text-[hsl(140_15%_42%)] text-sm tracking-widest uppercase neon-blue"
+          className="relative z-10 mt-12 text-[hsl(38_50%_42%)] text-sm tracking-widest uppercase neon-gold"
           style={{ fontFamily: "'Rajdhani', sans-serif" }}
         >
           The future of chance
